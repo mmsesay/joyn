@@ -1,0 +1,15 @@
+/* global styles */
+
+/* card style */
+.card-container {
+    margin: 0 12%;
+}
+
+.card-dim {
+    width: 76.8%;
+    height: 93%;
+}
+
+.custom-height {
+    height: 93%;
+}
