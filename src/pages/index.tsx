@@ -1,27 +1,27 @@
 import React from "react"
 
+// local imports
+import Layout from '../layouts/mainLayout'
+
 interface Props {}
 
 const Index = (_props: Props) => {
 
   return (
-    <>
-      <div className="container max-w-md mx-auto mt-10">
-        <div className="overflow-hidden rounded shadow-lg">
-          <img
-            className="w-full"
-            src="https://tailwindcss.com/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold">Joyn Platform</div>
-            <p className="text-base text-gray-700">
-              Development in progress
-            </p>
+    <Layout>
+      <div className="card-container">
+        <div className="bg-white card-dim shadow rounded-sm absolute">
+          <div className="flex">
+            <div className="w-2/5 p-6 h-full bg-baseGrayLight border-r-2 border-gray-300">
+              <p>Left side</p>
+            </div>
+            <div className="w-3/5 p-6">
+              <p>right side</p>
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 
