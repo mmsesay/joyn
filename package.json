@@ -5,8 +5,9 @@
   "version": "0.1.247",
   "author": "Muhammad Sesay && Afiz Savage",
   "dependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "gatsby-plugin-remote-images": "^2.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "6.1.0"
   },
   "devDependencies": {
@@ -18,9 +19,9 @@
     "autoprefixer": "10.0.2",
     "babel-eslint": "10.1.0",
     "cssnano": "4.1.10",
-    "eslint": "7.14.0",
+    "eslint": "^7.14.0",
     "eslint-config-react-app": "6.0.0",
-    "eslint-loader": "4.0.2",
+    "eslint-loader": "^3.0.4",
     "eslint-plugin-flowtype": "5.2.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",

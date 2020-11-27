@@ -1,16 +1,30 @@
 // mainLayout.tsx
-import React, { ReactNode } from "react"
+import React from "react"
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-interface IProps {
-  children: ReactNode
+interface User {
+  name: string
+  status: string
+  image?: string
 }
 
-const UserProfile = ({ children }: IProps) => {
-  return (
-    <div className="bg-baseGray w-full">
-      <div className="bg-baseTeal w-full h-32 pt-10">{children}</div>
-    </div>
-  )
+export const query = graphql`
+  {
+    MyNodes {
+      profilePic {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
+`
+
+const UserProfile = (props: User) => {
+  return <div className=""></div>
 }
 
 export default UserProfile

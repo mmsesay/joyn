@@ -48,6 +48,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "MyNodes",
+        name: "profilePic",
+        imagePath: "https://picsum.photos/200",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
